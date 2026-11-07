@@ -1,7 +1,13 @@
 [project]
 name = "rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "使用 Python 从零构建 RAG 系统（检索 / 重排 / 生成）"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+# 依赖声明（对应审查 R05）：版本与当前 .venv 中实测一致，便于 uv sync 复现环境。
+dependencies = [
+    "chromadb==1.5.9",
+    "openai==3.46.0",
+    "sentence-transformers==6.2.0",
+    "python-dotenv==1.2.4",
+]

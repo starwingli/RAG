@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Jupyter Notebook 自动检查点与备份（对应审查 R23/R02）
+.ipynb_checkpoints/
+*.ipynb.bak
